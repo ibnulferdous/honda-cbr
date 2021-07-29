@@ -49,6 +49,10 @@ body {
     font-size: 36px;
 }
 
+.orange-text {
+    color: var(--orange);
+}
+
 /*-----------------------------------------------------------------------
                                 Header Part 
 ------------------------------------------------------------------------*/
@@ -56,6 +60,25 @@ header {
     background: #264653;
     color: #ffffff;
 }
+
+/*-----------------------------------------------------------------------
+                            Featured Bikes section 
+------------------------------------------------------------------------*/
+.featured-bikes-section {
+    margin: 25% 0;
+}
+
+.featured-bikes-section .hr {
+    border-top: 2px solid var(--orange);
+    width: 75px;
+}
+
+.featured-bike {
+    filter: grayscale(100%);
+}
+
+
+
 
 
 
@@ -67,17 +90,21 @@ header {
 /* @media (min-width: 576px) { ... } */
 
 /* Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) {
-    
-} */
+@media (min-width: 768px) {
+    .featured-bikes-section {
+        margin: 12% 0 5%;
+    }
+}
 
 
 /* Large devices (desktops, less than 1200px) */
 @media (min-width: 992px) {
+    /* Utility Classes */
     .fs-48px {
         font-size: 48px;
     }
 
+    /* Hero Section */
     header {
         min-height: 60vh;
     }
@@ -85,11 +112,26 @@ header {
     main .container .row div:last-child {
         background: url("media/hero-dot-bg.svg") no-repeat 88% 5% /auto;
     }
+
+    /* Featured Bikes section */
+    .featured-bikes-section {
+        margin: 5% 0;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    /* Hero Section  */
     header {
         min-height: 100vh;
-    } 
+    }
+
+    main p {
+        width: 75%;
+    }
+
+    .hero-image {
+        transform: scale(1.3);
+        transform-origin: 100% 50%;
+    }
 }
