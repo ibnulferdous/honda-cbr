@@ -46,11 +46,15 @@ body {
 }
 
 .fs-48px {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .orange-text {
     color: var(--orange);
+}
+
+.grey-text {
+    color: var(--grey);
 }
 
 /*-----------------------------------------------------------------------
@@ -59,6 +63,10 @@ body {
 header {
     background: #264653;
     color: #ffffff;
+}
+
+.modal-image {
+    width: 90%;
 }
 
 /*-----------------------------------------------------------------------
@@ -77,6 +85,55 @@ header {
     filter: grayscale(100%);
 }
 
+/*-----------------------------------------------------------------------
+                            Reviews 
+------------------------------------------------------------------------*/
+.reviews .card {
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+}
+
+.user-images {
+    width: 30%;
+    padding-bottom: 5%;
+}
+
+.reviews .card p {
+    color: var(--grey);
+}
+
+.reviews .fa-star {
+    color: #E77C40;
+}
+
+.reviews h5 {
+    color: #23A6F0;
+}
+
+.reviews h6 {
+    color: #252B42;
+}
+
+/*-----------------------------------------------------------------------
+                                FAQs 
+------------------------------------------------------------------------*/
+.accordion-button:not(.collapsed) {
+    color: #383838;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.accordion-button:focus {
+    z-index: 0;
+    border-color: none;
+    outline: 0px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0);
+}
 
 
 
@@ -109,7 +166,11 @@ header {
         min-height: 60vh;
     }
 
-    main .container .row div:last-child {
+    .modal-image {
+        width: 70%;
+    }
+
+    .hero-image-div {
         background: url("media/hero-dot-bg.svg") no-repeat 88% 5% /auto;
     }
 
@@ -128,6 +189,10 @@ header {
 
     main p {
         width: 75%;
+    }
+
+    .modal-image {
+        width: 100%;
     }
 
     .hero-image {
