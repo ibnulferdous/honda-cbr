@@ -1,0 +1,95 @@
+/* Google fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/*-----------------------------------------------------------------------
+                            Base Styling 
+------------------------------------------------------------------------*/
+:root {
+    --orange: #E76F51;
+    --hover-orange: #FA804C;
+    --grey: #6C6C6C;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/*-----------------------------------------------------------------------
+                            Utility Classes 
+------------------------------------------------------------------------*/
+.btn-cbr {
+    background: var(--orange);
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 45px;
+}
+
+.btn-cbr:hover {
+    background: var(--hover-orange);
+    color: #ffffff;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fs-14px {
+    font-size: 14px;
+}
+
+.fs-48px {
+    font-size: 36px;
+}
+
+/*-----------------------------------------------------------------------
+                                Header Part 
+------------------------------------------------------------------------*/
+header {
+    background: #264653;
+    color: #ffffff;
+}
+
+
+
+/*-----------------------------------------------------------------------
+                            Media Query 
+------------------------------------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {
+    
+} */
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 992px) {
+    .fs-48px {
+        font-size: 48px;
+    }
+
+    header {
+        min-height: 60vh;
+    }
+
+    main .container .row div:last-child {
+        background: url("media/hero-dot-bg.svg") no-repeat 88% 5% /auto;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header {
+        min-height: 100vh;
+    } 
+}
